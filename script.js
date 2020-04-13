@@ -14,7 +14,7 @@ function divide(x, y) {
   return x / y;
 }
 
-function operate(num1, operator, num2) {
+function operate(num1, num2, operator) {
   if (operator === "+") {
     return add(num1, num2);
   } else if (operator === "-") {
