@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background: #3498db;
   padding-bottom: 30px;
@@ -12,14 +17,37 @@ body {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
   color: white;
+  font-size: 100px;
+  margin-left: 5%;
+}
+
+.web-page {
+  width: 100%;
+}
+
+.left-half {
+  float: left;
+  width: 50%;
+}
+
+.right-half {
+  float: left;
+  width: 50%;
+}
+
+.calculator input,
+.calc-button,
+.operator-button {
+  font-family: "Space Mono";
 }
 
 .calculator {
+  text-align: center;
   max-width: 400px;
   margin: 0 auto;
-  border: 2px solid #2980b9;
+  border: 2px solid #2c3e50;
   border-radius: 5px;
   background-color: #ecf0f1;
 }
@@ -27,9 +55,9 @@ h1 {
 .calc-button {
   background: #e74c3c;
   opacity: 85%;
-  border: 1px solid white;
+  border: 2px solid #ecf0f1;
   padding: 20px;
-  color: #eee;
+  color: #ecf0f1;
   border-radius: 5px;
   font-size: 22px;
   cursor: pointer;
@@ -49,12 +77,13 @@ h1 {
   box-shadow: none;
   outline: none;
   padding: 10px;
+  padding-right: 30px;
   width: 100%;
-  border-bottom: 2px solid #2980b9;
+  border-bottom: 2px solid #2c3e50;
   background-color: rgb(245, 240, 240);
   color: #333;
   text-align: right;
-  font-size: 40px;
+  font-size: 50px;
   border-radius: 5px;
 }
 
@@ -62,10 +91,26 @@ h1 {
   grid-column: span 2;
 }
 
-.calc-button#operator {
+.operator-button,
+.equals-button {
   background-color: #3498db;
+  border: 2px solid #ecf0f1;
+  padding: 20px;
+  color: #ecf0f1;
+  border-radius: 5px;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .calc-button#tool {
+  background: #2c3e50;
+}
+
+.calc-button#clear {
+  background: #2c3e50;
+  grid-column: span 2;
+}
+
+.operator-button#modulo {
   background: #2c3e50;
 }

@@ -6,34 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- <link rel="icon" href="/favicon.png"> -->
   </head>
   <body>
-    <h1>Let's Calculate!</h1>
-    <div class="calculator">
-      <input type="number">
-      <div class="calculator-buttons">
-          <button class="calc-button" id="tool">AC</button>
-          <button class="calc-button" id="tool">+/-</button>
-          <button class="calc-button" id="tool">%</button>
-          <button class="calc-button" id="operator">/</button>
-          <button class="calc-button">7</button>
-          <button class="calc-button">8</button>
-          <button class="calc-button">9</button>
-          <button class="calc-button" id="operator">*</button>
-          <button class="calc-button">4</button>
-          <button class="calc-button">5</button>
-          <button class="calc-button">6</button>
-          <button class="calc-button" id="operator">-</button>
-          <button class="calc-button">1</button>
-          <button class="calc-button">2</button>
-          <button class="calc-button">3</button>
-          <button class="calc-button" id="operator">+</button>
-          <button class="calc-button" id="zero">0</button>
-          <button class="calc-button" >.</button>
-          <button class="calc-button" id="operator">=</button>
+    <div class="web-page">
+      <div class="left-half">
+        <h1>Let's Calculate!</h1>
+      </div>
+      <div class="right-half">
+        <div class="calculator">
+          <input name="output" />
+          <div class="calculator-buttons">
+            <button class="calc-button" id="clear">C</button>
+            <!-- <button class="calc-button" id="tool">+/-</button> -->
+            <button class="operator-button" id="modulo">%</button>
+            <button class="operator-button">/</button>
+            <button class="calc-button">7</button>
+            <button class="calc-button">8</button>
+            <button class="calc-button">9</button>
+            <button class="operator-button">*</button>
+            <button class="calc-button">4</button>
+            <button class="calc-button">5</button>
+            <button class="calc-button">6</button>
+            <button class="operator-button">-</button>
+            <button class="calc-button">1</button>
+            <button class="calc-button">2</button>
+            <button class="calc-button">3</button>
+            <button class="operator-button">+</button>
+            <button class="calc-button" id="zero">0</button>
+            <button class="calc-button" id="decimal">.</button>
+            <button class="equals-button">=</button>
           </div>
+        </div>
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
